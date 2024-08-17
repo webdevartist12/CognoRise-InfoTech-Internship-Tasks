@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: url('./images/background.png') no-repeat center center fixed;
+    background-size: cover;
+ 
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 300px;
+    margin-right: 300px;  
+    background: rgba(255, 255, 255, 0.194);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 15px;
+    padding-bottom: 20px;
+    box-shadow: 8px 8px 20px  rgba(0, 0, 0, 0.1);
+   
+}
+
+.input-container{
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    padding: 25px;
+    
+}
+
+.input-container input{
+    border: none;
+    outline: none;
+    padding: 12px;
+    margin-block: 12px;
+    border-radius: 4px;
+    font-size: 16px;
+    background: rgba(134, 78, 78, 0.116);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 8px;
+}
+
+.input-container input[type="text"]{
+    width: 75%;
+}
+
+.input-container input[type="button"]{
+    background-color:#198754;
+    color: #fff;
+    font-weight: 700;
+    margin-left: 8px;
+    cursor: pointer;
+    padding: 12px 24px;
+}
+
+.input-container input[type="button"]:hover{
+    background-color:#20c997;
+    color: rgb(66, 62, 62);
+}
+
+ul{
+    width: 70%;
+    max-width: 450px;
+
+}
+
+ul li{
+    list-style-type: none;
+    cursor: pointer;
+    margin-block-end: 12px;
+    border-radius: 8px;
+    border: 0.125px solid #a89999;
+    padding: 6px 12px;
+    background: rgba(142, 79, 79, 0.116);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background-color 0.5s;
+}
+
+ul li:hover{
+    background-color: #e29696;
+}
+
+ul li p{
+    flex-grow: 1;
+    padding: 2px;
+}
+.btn{
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: none;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 8px;
+}
+
+.deleteBtn{
+    color: #ff0000;
+}
+
+.editBtn{
+    color: #008000;
+}
+
